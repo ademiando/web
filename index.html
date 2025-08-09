@@ -7,7 +7,57 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="root"></div>
-  <script type="module" src="main.jsx"></script>
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <img src="https://avatars.githubusercontent.com/u/19248306?v=4" class="profile-img" alt="Ademiando" />
+    <h1 class="hero-title">Ademiando</h1>
+    <div class="hero-subtitle">Creative Developer · UI/UX · Web Enthusiast</div>
+    <div class="hero-desc">
+      Passionate about building beautiful & interactive web experiences.<br>
+      <b>Tech:</b> React, Three.js, Next.js, GSAP, Node, UI Design<br>
+      <b>Location:</b> Indonesia · Open for collaboration.
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/ademiando" class="social-link" target="_blank" aria-label="GitHub">🐙</a>
+      <a href="https://linkedin.com/in/ademiando" class="social-link" target="_blank" aria-label="LinkedIn">in</a>
+      <a href="mailto:hi@ademiando.com" class="social-link" aria-label="Email">✉️</a>
+      <a href="https://twitter.com/ademiando" class="social-link" target="_blank" aria-label="X">𝕏</a>
+    </div>
+  </div>
+  <section class="section">
+    <h2 class="section-title">Portfolio</h2>
+    <div class="portfolio-list">
+      <div class="portfolio-card">
+        <h3>ademiando.com</h3>
+        <p>Personal interactive portfolio, built with React & Three.js.</p>
+        <a href="https://ademiando.com" target="_blank">Live Site</a>
+      </div>
+      <div class="portfolio-card">
+        <h3>Mystic UI</h3>
+        <p>Design system & UI kit for modern web-apps.</p>
+        <a href="https://github.com/ademiando/mystic-ui" target="_blank">GitHub</a>
+      </div>
+      <div class="portfolio-card">
+        <h3>Cosmic Blog</h3>
+        <p>Minimal blog system with Next.js & Markdown.</p>
+        <a href="https://github.com/ademiando/cosmic-blog" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      <b>Ademiando</b> is a software engineer and creative coder.<br>
+      Loves bringing imagination to life through code and visual design.<br>
+      Always learning, always building, always curious!
+    </p>
+  </section>
+  <footer class="section" style="font-size:0.98rem;color:#789;padding-bottom:32px;">
+    &copy; <span id="year"></span> Ademiando. Built with ❤️ for the web.
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="three-bg.js"></script>
 </body>
 </html>
