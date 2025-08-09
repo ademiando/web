@@ -6,24 +6,24 @@ body {
   color: #f6f6f6;
   overflow-x: hidden;
 }
-.hero-container {
-  position: relative;
-  min-height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+.hero-bg {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  background: radial-gradient(ellipse at 60% 20%, #23334d 0%, #050517 80%);
+  pointer-events: none;
 }
-.hero-canvas {
+canvas.bg-canvas {
   position: fixed;
   top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100vw; height: 100vh;
   background: transparent !important;
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
 }
 .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   padding: 80px 24px 0 24px;
   max-width: 700px;
   margin: 0 auto;
@@ -33,28 +33,27 @@ body {
   font-size: 3.2rem;
   font-weight: 800;
   letter-spacing: 0.05em;
-  margin: 0 0 24px 0;
+  margin: 0 0 18px 0;
   color: #eaf6fa;
   text-shadow: 0 6px 32px #1d2a48;
 }
 .hero-subtitle {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.3rem;
   color: #b8d0e2;
-  margin-bottom: 40px;
+  margin-bottom: 18px;
 }
 .hero-desc {
   font-size: 1.1rem;
   color: #aabbcc;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   line-height: 1.7;
 }
 .profile-img {
-  width: 124px;
-  height: 124px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #223366;
+  border: 3px solid #223366;
   box-shadow: 0 6px 32px #0008;
   margin-bottom: 18px;
 }
@@ -87,7 +86,7 @@ body {
   text-align: center;
 }
 .section-title {
-  font-size: 2.15rem;
+  font-size: 2rem;
   letter-spacing: 0.04em;
   color: #e3ecfb;
   margin-bottom: 18px;
@@ -116,7 +115,7 @@ body {
 .portfolio-card p {
   font-size: 0.98rem;
   color: #b8d0e2;
-  margin: 0 0 18px 0;
+  margin: 0 0 12px 0;
 }
 .portfolio-card a {
   color: #7fdfff;
