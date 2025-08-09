@@ -6,25 +6,24 @@ body {
   color: #f6f6f6;
   overflow-x: hidden;
 }
-.hero-bg {
-  position: fixed;
-  z-index: 0;
-  inset: 0;
-  background: radial-gradient(ellipse at 60% 20%, #23334d 0%, #050517 80%);
-  pointer-events: none;
-}
-canvas.bg-canvas {
+.hero-canvas {
   position: fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
   background: transparent !important;
   pointer-events: none;
-  z-index: 1;
+  z-index: 0;
+}
+.hero-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 80px 24px 0 24px;
+  padding: 100px 24px 0 24px;
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
@@ -33,27 +32,28 @@ canvas.bg-canvas {
   font-size: 3.2rem;
   font-weight: 800;
   letter-spacing: 0.05em;
-  margin: 0 0 18px 0;
+  margin: 0 0 24px 0;
   color: #eaf6fa;
   text-shadow: 0 6px 32px #1d2a48;
 }
 .hero-subtitle {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 400;
   color: #b8d0e2;
-  margin-bottom: 18px;
+  margin-bottom: 40px;
 }
 .hero-desc {
   font-size: 1.1rem;
   color: #aabbcc;
-  margin-bottom: 32px;
+  margin-bottom: 48px;
   line-height: 1.7;
 }
 .profile-img {
-  width: 120px;
-  height: 120px;
+  width: 124px;
+  height: 124px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #223366;
+  border: 4px solid #223366;
   box-shadow: 0 6px 32px #0008;
   margin-bottom: 18px;
 }
@@ -86,7 +86,7 @@ canvas.bg-canvas {
   text-align: center;
 }
 .section-title {
-  font-size: 2rem;
+  font-size: 2.15rem;
   letter-spacing: 0.04em;
   color: #e3ecfb;
   margin-bottom: 18px;
@@ -115,7 +115,7 @@ canvas.bg-canvas {
 .portfolio-card p {
   font-size: 0.98rem;
   color: #b8d0e2;
-  margin: 0 0 12px 0;
+  margin: 0 0 18px 0;
 }
 .portfolio-card a {
   color: #7fdfff;
